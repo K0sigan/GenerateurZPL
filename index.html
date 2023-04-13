@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Générateur d'étiquettes ZPL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Générateur d'étiquettes ZPL</h1>
+    <div id="etiquettesContainer">
+        <form class="etiquetteForm">
+            <label for="produit">Produit :</label>
+            <input type="text" id="produit" name="info1">
+            
+            <label for="categorie">Catégorie :</label>
+            <input type="text" id="categorie" name="info2">
+            
+            <label for="lot">Numéro de lot :</label>
+            <input type="text" id="lot" name="info3">
+            
+            <label for="reference">Référence :</label>
+            <input type="text" id="reference" name="info4">
+            
+            <label for="code">Code :</label>
+            <input type="text" id="code" name="info5">
+            
+            <label for="nombreRepetitions">Nombre de répétitions :</label>
+            <input type="number" id="nombreRepetitions" name="nombreRepetitions" min="1" value="1">
+        </form>
+    </div>
+    <button id="ajouterEtiquette" type="button">Ajouter une étiquette</button>
+    <button id="genererZPL" type="button">Générer le fichier ZPL</button>
+    <script src="script.js"></script>
+</body>
+</html>
